@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid  bg-secondary text-light">
+      <div class="row">
+        <div class="col-12">
+          <div class="display-3 text-center ">Random Game</div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- robot Part -->
+        <div class="col-4 d-flex flex-column vh-100 align-items-center justify-content-center gap-3">
+          <div class="d-flex flex-column gap-5">
+            <div class="fs-3 text-center " id="computer"></div>
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/10817/10817293.png"
+                width="150px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center" >
+          <div class="fs-3 text-center" id="result" style="height: 70%;"></div>
+
+        </div>
+        <!-- user -->
+        <div class="col-4">
+          <div class="d-flex flex-column justify-content-center align-items-center vh-100 gap-3">
+            <div class="fs-3 text-center" id="user"></div>
+            <div class="">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/562/562479.png"
+                width="150px"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="btn btn-outline-dark" onclick="scissorscheck()" id="Scissors">Scissors</div>
+              <div class="btn btn-outline-dark" onclick="papercheck()" id="Paper">Paper</div>
+              <div class="btn btn-outline-dark" onclick="rockcheck()" id="Rock">Rock</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="random.js"></script>
+  </body>
+</html>
